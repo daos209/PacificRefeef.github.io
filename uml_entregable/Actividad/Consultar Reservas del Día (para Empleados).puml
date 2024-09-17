@@ -1,0 +1,8 @@
+@startuml
+start
+:Empleado inicia sesión en el sistema;
+:Empleado accede a la sección de reservas del día;
+:El sistema muestra una lista de las reservas activas para ese día;
+:Empleado verifica los detalles de las reservas y prepara las habitaciones;
+stop
+@enduml

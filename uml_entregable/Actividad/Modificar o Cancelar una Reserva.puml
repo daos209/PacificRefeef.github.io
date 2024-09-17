@@ -1,0 +1,15 @@
+@startuml
+start
+:Cliente inicia sesión en el sistema;
+:Cliente selecciona la reserva que desea modificar o cancelar;
+:El sistema verifica la reserva;
+:El sistema muestra las opciones de modificación o cancelación;
+:Cliente confirma la acción;
+if (¿Modificar?) then (Sí)
+  :El sistema actualiza la reserva;
+else (No)
+  :El sistema elimina la reserva;
+endif
+:El sistema envía una notificación al cliente;
+stop
+@enduml

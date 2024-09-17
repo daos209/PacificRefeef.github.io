@@ -1,0 +1,12 @@
+@startuml
+start
+:Administrador accede al panel de reportes;
+:Administrador selecciona el rango de fechas para el reporte;
+:El sistema consulta los datos de reservas en la base de datos;
+:El sistema genera el reporte;
+:El sistema muestra el reporte en pantalla;
+if (¿Descargar reporte?) then (Sí)
+  :El sistema descarga el reporte en formato PDF;
+endif
+stop
+@enduml

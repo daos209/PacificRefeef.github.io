@@ -1,0 +1,12 @@
+@startuml
+start
+:Cliente accede a la página de disponibilidad;
+:Cliente selecciona las fechas deseadas;
+:El sistema verifica la disponibilidad en la base de datos;
+if (¿Hay habitaciones disponibles?) then (Sí)
+  :El sistema muestra las habitaciones disponibles;
+else (No)
+  :El sistema muestra un mensaje indicando que no hay disponibilidad;
+endif
+stop
+@enduml
