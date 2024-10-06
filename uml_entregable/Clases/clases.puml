@@ -1,0 +1,63 @@
+@startuml
+
+class Cliente {
+    - nombre: String
+    - correo: String
+    - contraseña: String
+    - telefono: String
+    + realizarReserva()
+    + modificarReserva()
+    + cancelarReserva()
+}
+
+class Reserva {
+    - idReserva: int
+    - fechaInicio: Date
+    - fechaFin: Date
+    - estado: String
+    + confirmar()
+    + cancelar()
+    + modificar()
+}
+
+class Habitacion {
+    - numeroHabitacion: int
+    - tipo: String
+    - precioDiario: float
+    + actualizarEstado()
+    + consultarDisponibilidad()
+}
+
+class Pago {
+    - idPago: int
+    - monto: float
+    - metodoPago: String
+    + procesarPago()
+    + generarRecibo()
+}
+
+class Administrador {
+    + gestionarHabitaciones()
+    + generarReportes()
+    + administrarUsuarios()
+}
+
+class Empleado {
+    + consultarReservasDelDia()
+    + prepararHabitaciones()
+}
+
+class Notificacion {
+    - mensaje: String
+    - destinatario: String
+    + enviar()
+}
+
+Cliente "1" -- "*" Reserva
+Reserva "1" -- "*" Habitacion
+Reserva "1" -- "1" Pago
+
+Administrador --|> Cliente
+Empleado --|> Cliente
+
+@enduml

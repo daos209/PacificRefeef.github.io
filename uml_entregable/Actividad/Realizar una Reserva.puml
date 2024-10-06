@@ -1,0 +1,14 @@
+@startuml
+start
+:Cliente selecciona las fechas de la estancia;
+:El sistema consulta la disponibilidad de habitaciones;
+if (¿Hay disponibilidad?) then (Sí)
+  :Cliente selecciona una habitación;
+  :Cliente realiza el pago;
+  :El sistema confirma la reserva;
+  :Envía confirmación al cliente;
+else (No)
+  :Fin del proceso;
+endif
+stop
+@enduml
