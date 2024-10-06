@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @startuml
 start
 :Empleado inicia sesión en el sistema;
@@ -6,3 +7,13 @@ start
 :Empleado verifica los detalles de las reservas y prepara las habitaciones;
 stop
 @enduml
+=======
+@startuml
+start
+:Empleado inicia sesión en el sistema;
+:Empleado accede a la sección de reservas del día;
+:El sistema muestra una lista de las reservas activas para ese día;
+:Empleado verifica los detalles de las reservas y prepara las habitaciones;
+stop
+@enduml
+>>>>>>> 41a1424d6440151b615a0c9781d2feef87f73b9f

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @startuml
 start
 :Administrador inicia sesión y accede al módulo de administración de habitaciones;
@@ -7,3 +8,14 @@ start
 :El sistema muestra un mensaje de confirmación;
 stop
 @enduml
+=======
+@startuml
+start
+:Administrador inicia sesión y accede al módulo de administración de habitaciones;
+:Administrador selecciona una habitación para editar;
+:Administrador actualiza la información (precio, disponibilidad, etc.);
+:El sistema guarda los cambios y actualiza la base de datos;
+:El sistema muestra un mensaje de confirmación;
+stop
+@enduml
+>>>>>>> 41a1424d6440151b615a0c9781d2feef87f73b9f

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @startuml
 actor Cliente
 actor Administrador
@@ -16,3 +17,23 @@ Administrador --> (Administrar Usuarios)
 
 Empleado --> (Consultar Reservas del Día)
 @enduml
+=======
+@startuml
+actor Cliente
+actor Administrador
+actor Empleado
+
+Cliente --> (Consultar Disponibilidad)
+Cliente --> (Realizar Reserva)
+Cliente --> (Modificar/Cancelar Reserva)
+Cliente --> (Recibir Confirmación)
+
+(Realizar Reserva) ..> (Realizar Pago) : <<include>>
+
+Administrador --> (Gestionar Habitaciones)
+Administrador --> (Generar Reportes)
+Administrador --> (Administrar Usuarios)
+
+Empleado --> (Consultar Reservas del Día)
+@enduml
+>>>>>>> 41a1424d6440151b615a0c9781d2feef87f73b9f
